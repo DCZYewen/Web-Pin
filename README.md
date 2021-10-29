@@ -16,3 +16,12 @@ curl http://localhost:8080/ping -> pong
 curl http://localhost:8080/process
 curl http://localhost:8080/usage
 ```
+
+
+## Note:
+Web-Pin include a library LightLOG, which is originally developed by [Shenggan](https://github.com/Shenggan). This is an
+advanced log library supports console and log-to-file(which could be a socket). I modified
+it a little(added some switchs to close some of the features to keep the log clean and
+tidy). Many thanks to Shenggan.
+The httpserver functions and libraries are provided by [libhv](https://github.com/ithewei/libhv). libhv is a library like
+libevent, libuv but provided more human-friendly interfaces and functions. Many thanks.
